@@ -12,6 +12,8 @@
 }
 .box_1 {
 }
+.box_2 {
+}
 .box_3 {
 }
 ._形状 {
@@ -67,6 +69,8 @@
 }
 ._段落 {
   text-align:left;
+}
+.line {
 }
 .text_area {
   color:#000000;
