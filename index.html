@@ -1,157 +1,70 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>Untitled Document</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link type="text/css" href="resources/css/reset.css" rel="Stylesheet" />
-    <link type="text/css" href="resources/css/default.css" rel="Stylesheet" />
-    <link rel='icon' type='image/svg+xml' href='resources/images/favicon_play.svg' />
-    <link rel='alternate icon' href='resources/images/favicon_play.ico' />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zero to Tech · 个人主页</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/lab.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="page-shell">
+        <main class="page-content">
+          <section class="dashboard-grid">
 
-    <script type="text/javascript">
-        if (location.href.toString().indexOf('file://localhost/') == 0) {
-            location.href = location.href.toString().replace('file://localhost/', 'file:///');
-        }
-    </script>
-    <!--<link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/debug/styles/debug.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/handoff.css" />
-    <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/codemirror.css" />-->
-</head>
-<body scroll="no" class="hashover" style="overflow: hidden;">
-    <div id="topPanel">
-        <div id="interfaceControlFrame">
-            <div id="interfaceControlFrameLeft">
-                <div id="interfaceControlFrameMinimizeContainer">
-                    <a title="Collapse" id="interfaceControlFrameMinimizeButton">
-                        <div id="minimizeArrow" class="minimizeButtonHover minimizeIcon"></div>
-                        <div id="minimizeX" class="minimizeButton minimizeIcon"></div>
-                    </a>
-                </div>
-                <div id="interfaceControlFrameCloseContainer">
-                    <a title="Close" id="interfaceControlFrameCloseButton">CLOSE</a>
-                </div>
+            <!-- ↓↓↓ 顶部 hero：品牌 + 导航 + 大标题 + 副标题 ↓↓↓ -->
+            <!-- 这一整块在 text-lab.html 里几乎一字不差地又抄了一遍 -->
+            <article class="hero-stage panel-full">
+              <div class="hero-topline">
+                <p class="brand-eyebrow">zero to tech</p>
+                <nav class="inline-links hero-nav">
+                  <a class="nav-link" href="index.html">个人主页</a>
+                  <a class="nav-link" href="text-lab.html">文字实验室</a>
+                </nav>
+              </div>
+              <div class="hero-copy">
+                <h1 class="hero-display">关于我</h1>
+                <p class="hero-subtitle">项目，创意，灵感，心得，我的作品</p>
+              </div>
+            </article>
+            <!-- ↑↑↑ hero 结束 ↑↑↑ -->
 
-                <div id="sitemapControlFrameContainer" title="Project Pages">
-                    <div id="projectControlFrameHeaderContainer">
-                        <ul id="projectControlFrameHeader"></ul>
-                    </div>
+            <article class="panel panel-full featured-work-panel card">
+              <p class="section-kicker">作品</p>
+              <p class="featured-title">文字实验室</p>
+              <p class="featured-copy">拼音和情绪，挖掘中文里的细节</p>
+              <a class="featured-link" href="text-lab.html">
+                <span class="featured-link-label">打开作品</span>
+                <span class="arrow">›</span>
+              </a>
+            </article>
 
-                    <div id="interfacePageNameContainer">
-                        <div id="interfacePageNameButton" class='pageNameHeader'>
-                            &nbsp;
-                        </div>
-                        <div id="interfacePageCount" class='pageCountHeader'>
-                        </div>
-                    </div>
-                </div>
+            <article class="panel panel-full identity-panel card">
+              <div class="identity-item">
+                <p class="section-kicker">座右铭</p>
+                <p class="identity-value identity-quote">已识乾坤大，尤怜草木青</p>
+              </div>
+              <div class="identity-item">
+                <p class="section-kicker">正在学习</p>
+                <p class="identity-value">零到全栈</p>
+              </div>
+            </article>
 
-
-                <div id="interfaceAdaptiveViewsContainer" title="Adaptive Views">
-                    <div id="interfaceAdaptiveViewsIconButton">&nbsp;</div>
-                    <div id="interfaceAdaptiveViewsButton" class='adaptiveViewHeader'>
-                        &nbsp;
-                    </div>
-                    <div id="adaptiveViewsDropdown" class="caret"></div>
-                </div>
-            </div>
-
-            <div id="interfaceControlFrameContainer">
-                <div id="handoffControlFrameHeaderContainer">
-                    <ul id="handoffControlFrameHeader"></ul>
-                </div>
-                <div id="interfaceControlFrameLogoContainer">
-                    <!--<div id="previewNotice">
-                        Local Preview
-                    </div>-->
-                </div>
-            </div>
-
-            <div id="interfaceControlFrameRight">
-                <div id="publishContainer">
-                    <a id="publishButton">Share Prototype</a>
-                </div>
-
-                <div id="scaleMenuButton" title="Zoom and Scale">
-                    <div id="scaleValue">100%</div>
-                    <div id="expandScaleArrow" class="caret"></div>
-                </div>
-
-                <div id="inspectControlFrameHeaderContainer">
-                    <ul id="inspectControlFrameHeader">
-                        <li id="overflowBtn">
-                            <a id="overflowMenuButton" title="Options"></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="separatorContainer">
-                    <div class="separator"></div>
-                </div>
-
-                <div id="overflowMadeWith"><a href="https://www.axure.com" id="axureLogo" target="_blank"></a></div>
-
-            </div>
-
-        </div>
-    </div>
-    <div id="popupContainer">
-        <div id='interfaceAdaptiveViewsListContainer'>
-        </div>
-
-        <div id='interfaceScaleListContainer'>
-        </div>
-
-        <div id='overflowMenuContainer'>
-        </div>
-
-        <div id='scaleMenuContainer'>
-        </div>
-    </div>
-    <div id="outerContainer">
-        <div id="clippingBounds">
-            <div id="clippingBoundsScrollContainer"></div>
-        </div>
-
-        <div id="mHideSidebar"></div>
-        <div id="lsplitbar" class="splitbar"></div>
-        <div id="mainPanel">
-            <div id="mainPanelContainer" style="position: relative; width:100%; height: 100%;">
-                <div id="clipFrameScroll" style="position: relative; width:100%; height: 100%; background-color: #ffffff;">
-                    <iframe id="mainFrame" name="mainFrame" width="100%" height="100%" src="about:blank" frameborder="0" style="display: block;position:absolute;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-
-        <div id="rsplitbar" class="splitbar"></div>
+          </section>
+        </main>
+      </div>
     </div>
 
-    <div id="maximizePanelContainer" class="maximizePanelContainer">
-        <div id="maximizePanelOver">
-            <div id="maximizePanel" title="Expand" class="maximizePanelOver">
-                <div id="maximizeButton" class="maximizeButton maximizeIcon"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="mobileControlFrameContainer"></div>
-
-<!-- 11.0.0.4131 -->
-<script src="resources/scripts/jquery-3.7.1.min.js"></script>
-<script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
-<script src="resources/scripts/axutils.js"></script>
-<script src="resources/scripts/messagecenter.js"></script>
-<script src="resources/scripts/player/axplayer.js"></script>
-<script src="resources/scripts/player/init.js"></script>
-
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@4/lib/anime.iife.min.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
 </html>
