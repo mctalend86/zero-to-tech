@@ -4,14 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zero to Tech · 个人主页</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/lab.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- 删掉html中直接引入css的写法，统一交给main.js导入 -->
   </head>
   <body>
     <div class="app-shell">
@@ -30,7 +23,7 @@
                 </nav>
               </div>
               <div class="hero-copy">
-                <h1 class="hero-display">关于我</h1>
+                <h1 class="hero-display">关于我自己</h1>
                 <p class="hero-subtitle">项目，创意，灵感，心得，我的作品</p>
               </div>
             </article>
@@ -62,9 +55,9 @@
       </div>
     </div>
 
+    <!-- 外部CDN动画库保留 -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@4/lib/anime.iife.min.js"></script>
-    <script src="js/cards.js"></script>
-    <script src="js/score.js"></script>
-    <script src="js/nav.js"></script>
+    <!-- 只保留唯一模块入口，删除cards/score/nav独立script -->
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
